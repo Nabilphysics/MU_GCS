@@ -1,22 +1,22 @@
-# MUSolvers
-This a software to make drone control easier and more safer. 
-
 ## MUSolvers , Metropolitan University 
-
 ###  **** Project Short Description>>****
 [Please See the Video of Software](https://youtu.be/TcsrRoRIO6w)
 
 Our project is a desktop app that enables small operators to know more about specific weather parameters, local terrain, and no fly zones within five-mile radius of their GPS locations. It has two major portions- one is software portion and another one is hardware portion. The software displays different weather parameters, maps, alerts, and few telemetry data. This software gets these telemetry data from the hardware portion which collects these data from drone via MAVLINK protocol. Which means that our desktop app supports MAVLINK protocol. By using our app, a drone operator will easily know about the condition of weather before flight. Also he/she will be able to detect the no fly zone regions to avoid any unexpected crash.
 Our app can display weather parameters such as temperature, relative humidity, rain risk probability, UV index, air velocity, dew point, cloud percentage etc. It is also able to provide weather information for the next 24 hours from present time. So by using this app, a drone operator can easily choose a suitable time for drone mission. For collecting the weather information, we have used the Weather Info API of http://weather.com , which is a well recognized weather information providing server in the whole world. We have chosen this server because Google and some other giant companies use this same server for data reliability. Beside the weather information, the software shows some important telemetry data such as roll, pitch, yaw, latitude, longitude, altitude, vertical speed, flight mode etc. This software also contains a map which shows local terrains and route information of the GPS position of Drone. In the hardware part, we have used some sensors such as air quality sensor, UV index indicator, temperature sensor and relative humidity sensor. From the data of these sensors, our app is able to gather local weather information of any location where internet is not available. In other words, our app can work like a portable weather station as well as a portable ground control station. In any unexpected situation, drone can be triggered into Return to Home (RTH) mode from this app directly. This ensures a great security for drone and other people in the flight zone.
-Why do you think this is the most innovative?
+
+### Why do you think this is the most innovative?
+
 There are many softwares for operating drone like Mission Planner, APM planner, Qground Control Station etc. But these softwares can only show the telemetry data and the position of drone in a map. On the other hand, weather information providing apps and websites can only provide weather information. We think that our app is the most innovative because this app merges both the telemetry data and the weather data in a single interface. Moreover this app can work in both online and offline mode. Since this app uses MAVLINK protocol to communicate with drone for telemetry data, it can be used vastly by drone operators because MAVLINK is an established communication protocol for drones and most of the commercial flight controllers use MAVLINK protocol to maintain universality.
-How is this changing the way we normally operate?
+### How is this changing the way we normally operate?
+
 Most of the small Drones crash in case of unplanned flight.  We cannot get any weather information before drone flight. We can find some weather information from existing apps or website. But, this information are scattered in different sites and not well organized. Moreover these sites don’t provide real time weather information of the actual location (GPS Coordinate based) of the Drone. Our app will show weather parameters and it will take few decisions automatically as well as manual commands to reduce unexpected Drone Crashes in case of weather changes. This option will take a great change into the way we normally operate.
 
-**How is this changing the way we normally behave?**
+### **How is this changing the way we normally behave?**
 
 Normally, we fly our Drones whenever we want just knowing current weather condition. We try to understand the condition of the weather observing the visible condition of the surrounding environment. We are not used to depend on Scientific Weather Information. We hope our app will encourage us to depend on Scientific Weather Update Information. By this it will change the way normally we behave.
-How is this different from current technologies?
+### How is this different from current technologies?
+
 Current Drone Controlling apps are only telemetry data dependent.  Our app supports few new and important features as well as traditional features. Our app can show weather information and there is a scope to monitor our drone depending on this weather information. We depend on our portable weather stations data and internet weather information simultaneously. We have a dedicated microcontroller to take data from sensors and send to our software via serial communication. Our app will perform better for this dual data source dependency.
 
 ![Software](https://drive.google.com/file/d/0B5EEynt5iQfreFJpeGlOOVc1cUk/view?usp=sharing)
